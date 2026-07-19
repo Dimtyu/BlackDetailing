@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BLACK NIGHT — Детейлинг</title>
+  <title>BLACK NIGHT — Детейлинг Красноярск</title>
+  <meta name="description" content="Профессиональный детейлинг в Красноярске: тонировка, бронирование фар, полировка, химчистка. Академгородок 16г. Записывайтесь!">
   <style>
     /* ===== ПЕРЕМЕННЫЕ ===== */
     :root {
@@ -37,7 +38,7 @@
       padding: 0 20px;
     }
 
-    /* ===== ГРАДИЕНТНЫЙ ТЕКСТ (основной) ===== */
+    /* ===== ГРАДИЕНТНЫЙ ТЕКСТ ===== */
     .gradient-text {
       background: var(--text-gradient);
       -webkit-background-clip: text;
@@ -286,38 +287,6 @@
       border-color: var(--accent);
       transform: scale(1.02);
       box-shadow: var(--shadow);
-    }
-    .upload-area {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 15px;
-      margin: 10px 0 20px;
-    }
-    .upload-area input[type="file"] {
-      background: #1a1a1a;
-      color: #ccc;
-      padding: 10px;
-      border-radius: 10px;
-      border: 1px solid var(--border-light);
-      font-size: 14px;
-      flex: 1;
-      min-width: 200px;
-    }
-    .upload-area button {
-      background: var(--accent);
-      color: #fff;
-      border: none;
-      padding: 10px 28px;
-      border-radius: 10px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: 0.3s;
-      font-size: 15px;
-    }
-    .upload-area button:hover {
-      background: var(--accent-hover);
-      transform: scale(1.03);
     }
 
     /* ===== STEPS ===== */
@@ -573,73 +542,6 @@
       font-weight: 600;
     }
 
-    /* ===== SETTINGS PANEL ===== */
-    .settings-toggle {
-      display: block;
-      text-align: center;
-      margin: 40px 0 10px;
-      color: #888;
-      cursor: pointer;
-      font-size: 14px;
-      border: 1px dashed var(--accent);
-      padding: 10px;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    .settings-toggle:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: rgba(192,57,43,0.05);
-    }
-    .settings-panel {
-      display: none;
-      background: var(--bg-card);
-      border: 1px solid var(--accent);
-      border-radius: 18px;
-      padding: 30px;
-      margin: 10px 0 30px;
-    }
-    .settings-panel.active {
-      display: block;
-    }
-    .settings-panel label {
-      display: block;
-      margin: 12px 0 4px;
-      color: #aaa;
-      font-weight: 600;
-      font-size: 14px;
-    }
-    .settings-panel input,
-    .settings-panel textarea {
-      width: 100%;
-      padding: 10px 14px;
-      background: #1a1a1a;
-      border: 1px solid var(--border-light);
-      border-radius: 8px;
-      color: #e0e0e0;
-      font-size: 15px;
-    }
-    .settings-panel input:focus,
-    .settings-panel textarea:focus {
-      outline: none;
-      border-color: var(--accent);
-    }
-    .settings-panel .save-btn {
-      margin-top: 20px;
-      background: var(--accent);
-      color: #fff;
-      border: none;
-      padding: 12px 30px;
-      border-radius: 10px;
-      font-weight: 700;
-      cursor: pointer;
-      font-size: 16px;
-      transition: 0.3s;
-    }
-    .settings-panel .save-btn:hover {
-      background: var(--accent-hover);
-    }
-
     /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
       header {
@@ -677,26 +579,27 @@
   </style>
 </head>
 <body>
-<!-- ВСЯ РАЗМЕТКА И JS ОСТАЮТСЯ ТАКИМИ ЖЕ, КАК В ПРОШЛОМ КОДЕ -->
-<!-- (я скопирую её полностью, чтобы код был цельным) -->
 
 <div class="container">
+
+  <!-- ===== HEADER ===== -->
   <header>
     <div class="logo">
-      <h1 id="logoText">BLACK NIGHT</h1>
-      <span id="subText">Premium Detailing &amp; Service</span>
+      <h1>BLACK NIGHT</h1>
+      <span>Premium Detailing &amp; Service</span>
     </div>
     <div class="header-contacts">
-      <a href="tel:+79994428731" id="phone1">+7 999 442 8731</a>
-      <a href="tel:+79676185582" id="phone2">+7 967 618 5582</a>
-      <small id="workTime">Ежедневно · 08:00 – 23:00</small>
+      <a href="tel:+79994428731">+7 999 442 8731</a>
+      <a href="tel:+79676185582">+7 967 618 5582</a>
+      <small>Пн–Сб · 10:00 – 22:00</small>
     </div>
   </header>
 
+  <!-- ===== HERO ===== -->
   <section class="hero">
-    <h2 id="heroTitle">ИДЕАЛЬНЫЙ БЛЕСК</h2>
-    <p id="heroDesc">Профессиональный детейлинг для вашего автомобиля</p>
-    <div class="hero-tags" id="heroTags">
+    <h2>ДЕТЕЙЛИНГ В КРАСНОЯРСКЕ</h2>
+    <p>Профессиональный уход за вашим автомобилем</p>
+    <div class="hero-tags">
       <span>ТОНИРОВКА</span>
       <span>БРОНИРОВАНИЕ ФАР</span>
       <span>ПОЛИРОВКА</span>
@@ -704,75 +607,77 @@
     </div>
   </section>
 
+  <!-- ===== SERVICES ===== -->
   <section>
     <div class="section-sub">01 / Услуги</div>
-    <h2 class="section-title" id="servicesTitle">Что мы делаем с вашим авто</h2>
-    <div class="services-grid" id="servicesGrid">
+    <h2 class="section-title">Прайс-лист</h2>
+    <div class="services-grid">
       <div class="service-card">
-        <h3 class="service-name" data-index="0">Тонировка</h3>
-        <p class="service-desc" data-index="0">Защита от солнца, ультрафиолета и посторонних взглядов. Качественная плёнка.</p>
-        <span class="price service-price" data-index="0">от 3 000 ₽</span>
+        <h3>Тонировка</h3>
+        <p>Лобовое стекло – 2 500 ₽<br>Боковые стёкла – 2 500 ₽<br>Задняя полусфера – 4 500 ₽<br>Передняя полусфера – 4 500 ₽</p>
+        <span class="price">от 2 500 ₽</span>
       </div>
       <div class="service-card">
-        <h3 class="service-name" data-index="1">Бронирование фар</h3>
-        <p class="service-desc" data-index="1">Прозрачная защита от сколов, песка и выцветания. Сохраняет светопропускание.</p>
-        <span class="price service-price" data-index="1">от 3 500 ₽</span>
+        <h3>Бронирование фар</h3>
+        <p>Защита от сколов и выцветания. Сохраняет прозрачность.</p>
+        <span class="price">7 000 ₽</span>
       </div>
       <div class="service-card">
-        <h3 class="service-name" data-index="2">Полировка кузова</h3>
-        <p class="service-desc" data-index="2">Восстановление блеска, удаление царапин и голограмм. Возвращаем заводской вид.</p>
-        <span class="price service-price" data-index="2">от 2 000 ₽</span>
+        <h3>Полировка кузова</h3>
+        <p>Восстановление блеска, удаление царапин и голограмм.</p>
+        <span class="price">от 10 000 ₽</span>
       </div>
       <div class="service-card">
-        <h3 class="service-name" data-index="3">Химчистка салона</h3>
-        <p class="service-desc" data-index="3">Глубокая очистка, удаление пятен и запахов. Бережный уход за любыми материалами.</p>
-        <span class="price service-price" data-index="3">от 2 000 ₽</span>
+        <h3>Химчистка салона</h3>
+        <p>Глубокая очистка, удаление пятен и запахов. Бережный уход.</p>
+        <span class="price">от 10 000 ₽</span>
       </div>
     </div>
   </section>
 
+  <!-- ===== ADVANTAGES ===== -->
   <section>
     <div class="section-sub">02 / Почему BLACK NIGHT</div>
-    <h2 class="section-title" id="advantagesTitle">Три причины отдать авто нам</h2>
+    <h2 class="section-title">Три причины отдать авто нам</h2>
     <div class="adv-grid">
       <div class="adv-item">
         <span class="num">01</span>
-        <h4 id="adv1Title">Только премиум-материалы</h4>
-        <p id="adv1Desc">Плёнки и составы от мировых брендов. Никаких ноунеймов и подделок.</p>
+        <h4>Премиум-материалы</h4>
+        <p>Работаем с ведущими брендами, гарантируем качество.</p>
       </div>
       <div class="adv-item">
         <span class="num">02</span>
-        <h4 id="adv2Title">Чёткие сроки</h4>
-        <p id="adv2Desc">Согласовываем дату и сдаём авто точно в срок. Уважаем ваше время.</p>
+        <h4>Опыт 8+ лет</h4>
+        <p>Мастера с большим стажем, знаем все тонкости каждой модели.</p>
       </div>
       <div class="adv-item">
         <span class="num">03</span>
-        <h4 id="adv3Title">Мастера с опытом 8+ лет</h4>
-        <p id="adv3Desc">Работаем с премиум-сегментом: BMW, Mercedes, Porsche, Lexus и другие.</p>
+        <h4>Чёткие сроки</h4>
+        <p>Выполняем работы точно в оговорённое время, без задержек.</p>
       </div>
     </div>
   </section>
 
+  <!-- ===== GALLERY ===== -->
   <section>
     <div class="section-sub">03 / Работы</div>
-    <h2 class="section-title" id="galleryTitle">Примеры выполненных работ</h2>
+    <h2 class="section-title">Примеры наших работ</h2>
     <div class="gallery-grid" id="galleryGrid">
+      <!-- ЗДЕСЬ ЗАМЕНИТЕ ССЫЛКИ НА ВАШИ ФОТО -->
       <img src="https://via.placeholder.com/400x250/1a1a1a/d4d2d0?text=Фото+1" alt="работа 1">
       <img src="https://via.placeholder.com/400x250/1a1a1a/d4d2d0?text=Фото+2" alt="работа 2">
       <img src="https://via.placeholder.com/400x250/1a1a1a/d4d2d0?text=Фото+3" alt="работа 3">
       <img src="https://via.placeholder.com/400x250/1a1a1a/d4d2d0?text=Фото+4" alt="работа 4">
     </div>
-    <div class="upload-area">
-      <input type="file" accept="image/*" multiple id="imageUpload">
-      <button onclick="addImages()">Добавить фото</button>
-    </div>
+    <p style="color:#999; font-size:14px; text-align:center;">Замените ссылки на свои фотографии или загрузите новые через GitHub.</p>
   </section>
 
+  <!-- ===== STEPS ===== -->
   <section>
     <div class="section-sub">04 / Как мы работаем</div>
-    <h2 class="section-title" id="stepsTitle">Пять шагов к идеальному авто</h2>
+    <h2 class="section-title">Пять шагов к идеальному авто</h2>
     <div class="steps-grid">
-      <div class="step-item"><span class="step-num">01</span><h4>Заявка</h4><p>Оставляете заявку — мы перезваниваем в течение 5 минут.</p></div>
+      <div class="step-item"><span class="step-num">01</span><h4>Заявка</h4><p>Оставляете заявку — мы перезваниваем через 5 минут.</p></div>
       <div class="step-item"><span class="step-num">02</span><h4>Осмотр</h4><p>Бесплатный осмотр в боксе, согласование сметы.</p></div>
       <div class="step-item"><span class="step-num">03</span><h4>Работа</h4><p>Подгоняем авто, выполняем работы по регламенту.</p></div>
       <div class="step-item"><span class="step-num">04</span><h4>Контроль</h4><p>Проверка качества под лампой, фотоотчёт клиенту.</p></div>
@@ -780,9 +685,10 @@
     </div>
   </section>
 
+  <!-- ===== REVIEWS ===== -->
   <section>
     <div class="section-sub">05 / Отзывы</div>
-    <h2 class="section-title" id="reviewsTitle">Что говорят клиенты</h2>
+    <h2 class="section-title">Что говорят клиенты</h2>
     <div class="reviews-grid" id="reviewsGrid"></div>
     <div class="add-review">
       <h4>Оставить отзыв</h4>
@@ -792,9 +698,10 @@
     </div>
   </section>
 
+  <!-- ===== FORM ===== -->
   <section>
     <div class="section-sub">06 / Запись</div>
-    <h2 class="section-title" id="formTitle">Записаться на услугу</h2>
+    <h2 class="section-title">Записаться на услугу</h2>
     <div class="form-wrap">
       <form id="orderForm">
         <input type="text" name="name" placeholder="Ваше имя" required>
@@ -812,183 +719,36 @@
     </div>
   </section>
 
+  <!-- ===== CONTACTS ===== -->
   <section>
     <div class="section-sub">07 / Контакты</div>
-    <h2 class="section-title" id="contactsTitle">Заезжайте в бокс</h2>
+    <h2 class="section-title">Заезжайте в бокс</h2>
     <div class="contacts-block">
       <div class="col">
         <h4>Адрес</h4>
-        <p id="addressText">Красноярск, ул. Содружества, 3А</p>
+        <p>Красноярск, Академгородок, 16г</p>
       </div>
       <div class="col">
         <h4>Часы работы</h4>
-        <p id="workTimeText">Ежедневно · 08:00 — 23:00</p>
+        <p>Пн–Сб · 10:00 – 22:00</p>
       </div>
       <div class="col">
         <h4>Телефоны</h4>
-        <a href="tel:+79994428731" id="contactPhone1">+7 999 442 8731</a>
-        <a href="tel:+79676185582" id="contactPhone2">+7 967 618 5582</a>
+        <a href="tel:+79994428731">+7 999 442 8731</a>
+        <a href="tel:+79676185582">+7 967 618 5582</a>
       </div>
     </div>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© 2026 <span id="footerName">BLACK NIGHT</span> — Премиум детейлинг</p>
+    <p>© 2026 <span>BLACK NIGHT</span> — Детейлинг в Красноярске</p>
   </footer>
 
-  <div class="settings-toggle" onclick="toggleSettings()">⚙️ Редактировать текст и цены</div>
-  <div class="settings-panel" id="settingsPanel">
-    <label>Название компании</label>
-    <input type="text" id="setLogo" value="BLACK NIGHT">
-    <label>Подзаголовок</label>
-    <input type="text" id="setSub" value="Premium Detailing &amp; Service">
-    <label>Телефон 1</label>
-    <input type="text" id="setPhone1" value="+7 999 442 8731">
-    <label>Телефон 2</label>
-    <input type="text" id="setPhone2" value="+7 967 618 5582">
-    <label>Время работы</label>
-    <input type="text" id="setWorkTime" value="Ежедневно · 08:00 – 23:00">
-    <label>Заголовок героя</label>
-    <input type="text" id="setHeroTitle" value="ИДЕАЛЬНЫЙ БЛЕСК">
-    <label>Описание героя</label>
-    <input type="text" id="setHeroDesc" value="Профессиональный детейлинг для вашего автомобиля">
-    <label>Теги героя (через запятую)</label>
-    <input type="text" id="setHeroTags" value="ТОНИРОВКА, БРОНИРОВАНИЕ ФАР, ПОЛИРОВКА, ХИМЧИСТКА">
-    <label>Услуги (название;описание;цена через ; для каждой, разделять |)</label>
-    <textarea id="setServices" rows="4">Тонировка;Защита от солнца, ультрафиолета и посторонних взглядов. Качественная плёнка.;от 3 000 ₽|Бронирование фар;Прозрачная защита от сколов, песка и выцветания. Сохраняет светопропускание.;от 3 500 ₽|Полировка кузова;Восстановление блеска, удаление царапин и голограмм. Возвращаем заводской вид.;от 2 000 ₽|Химчистка салона;Глубокая очистка, удаление пятен и запахов. Бережный уход за любыми материалами.;от 2 000 ₽</textarea>
-    <label>Преимущества (заголовок1;описание1 | заголовок2;описание2 | заголовок3;описание3)</label>
-    <input type="text" id="setAdv" value="Только премиум-материалы;Плёнки и составы от мировых брендов. Никаких ноунеймов и подделок.|Чёткие сроки;Согласовываем дату и сдаём авто точно в срок. Уважаем ваше время.|Мастера с опытом 8+ лет;Работаем с премиум-сегментом: BMW, Mercedes, Porsche, Lexus и другие.">
-    <label>Адрес</label>
-    <input type="text" id="setAddress" value="Красноярск, ул. Содружества, 3А">
-    <label>Название в футере</label>
-    <input type="text" id="setFooterName" value="BLACK NIGHT">
-    <button class="save-btn" onclick="saveSettings()">Сохранить настройки</button>
-  </div>
 </div>
 
 <script>
-  // ===== ВСЕ JS-ФУНКЦИИ БЕЗ ИЗМЕНЕНИЙ (копируем из прошлого кода) =====
-  function loadSettings() {
-    const data = localStorage.getItem('bn_settings');
-    if (data) {
-      const s = JSON.parse(data);
-      document.getElementById('setLogo').value = s.logo || 'BLACK NIGHT';
-      document.getElementById('setSub').value = s.sub || 'Premium Detailing &amp; Service';
-      document.getElementById('setPhone1').value = s.phone1 || '+7 999 442 8731';
-      document.getElementById('setPhone2').value = s.phone2 || '+7 967 618 5582';
-      document.getElementById('setWorkTime').value = s.workTime || 'Ежедневно · 08:00 – 23:00';
-      document.getElementById('setHeroTitle').value = s.heroTitle || 'ИДЕАЛЬНЫЙ БЛЕСК';
-      document.getElementById('setHeroDesc').value = s.heroDesc || 'Профессиональный детейлинг для вашего автомобиля';
-      document.getElementById('setHeroTags').value = s.heroTags || 'ТОНИРОВКА, БРОНИРОВАНИЕ ФАР, ПОЛИРОВКА, ХИМЧИСТКА';
-      document.getElementById('setServices').value = s.services || 'Тонировка;Защита от солнца, ультрафиолета и посторонних взглядов. Качественная плёнка.;от 3 000 ₽|Бронирование фар;Прозрачная защита от сколов, песка и выцветания. Сохраняет светопропускание.;от 3 500 ₽|Полировка кузова;Восстановление блеска, удаление царапин и голограмм. Возвращаем заводской вид.;от 2 000 ₽|Химчистка салона;Глубокая очистка, удаление пятен и запахов. Бережный уход за любыми материалами.;от 2 000 ₽';
-      document.getElementById('setAdv').value = s.adv || 'Только премиум-материалы;Плёнки и составы от мировых брендов. Никаких ноунеймов и подделок.|Чёткие сроки;Согласовываем дату и сдаём авто точно в срок. Уважаем ваше время.|Мастера с опытом 8+ лет;Работаем с премиум-сегментом: BMW, Mercedes, Porsche, Lexus и другие.';
-      document.getElementById('setAddress').value = s.address || 'Красноярск, ул. Содружества, 3А';
-      document.getElementById('setFooterName').value = s.footerName || 'BLACK NIGHT';
-      applySettings(s);
-    } else {
-      applyDefaultSettings();
-    }
-  }
-
-  function applySettings(s) {
-    document.getElementById('logoText').textContent = s.logo || 'BLACK NIGHT';
-    document.getElementById('subText').textContent = s.sub || 'Premium Detailing &amp; Service';
-    document.getElementById('phone1').textContent = s.phone1 || '+7 999 442 8731';
-    document.getElementById('phone1').href = 'tel:' + (s.phone1 || '+79994428731').replace(/\s/g, '');
-    document.getElementById('phone2').textContent = s.phone2 || '+7 967 618 5582';
-    document.getElementById('phone2').href = 'tel:' + (s.phone2 || '+79676185582').replace(/\s/g, '');
-    document.getElementById('workTime').textContent = s.workTime || 'Ежедневно · 08:00 – 23:00';
-    document.getElementById('heroTitle').textContent = s.heroTitle || 'ИДЕАЛЬНЫЙ БЛЕСК';
-    document.getElementById('heroDesc').textContent = s.heroDesc || 'Профессиональный детейлинг для вашего автомобиля';
-    const tags = (s.heroTags || 'ТОНИРОВКА, БРОНИРОВАНИЕ ФАР, ПОЛИРОВКА, ХИМЧИСТКА').split(',').map(t => t.trim());
-    document.getElementById('heroTags').innerHTML = tags.map(t => `<span>${t}</span>`).join('');
-    if (s.services) {
-      const items = s.services.split('|').map(item => item.split(';').map(x => x.trim()));
-      document.querySelectorAll('.service-card').forEach((card, idx) => {
-        if (items[idx]) {
-          card.querySelector('.service-name').textContent = items[idx][0] || '';
-          card.querySelector('.service-desc').textContent = items[idx][1] || '';
-          card.querySelector('.service-price').textContent = items[idx][2] || '';
-        }
-      });
-    }
-    if (s.adv) {
-      const advItems = s.adv.split('|').map(item => item.split(';').map(x => x.trim()));
-      const titles = [document.getElementById('adv1Title'), document.getElementById('adv2Title'), document.getElementById('adv3Title')];
-      const descs = [document.getElementById('adv1Desc'), document.getElementById('adv2Desc'), document.getElementById('adv3Desc')];
-      advItems.forEach((item, idx) => {
-        if (titles[idx]) titles[idx].textContent = item[0] || '';
-        if (descs[idx]) descs[idx].textContent = item[1] || '';
-      });
-    }
-    document.getElementById('addressText').textContent = s.address || 'Красноярск, ул. Содружества, 3А';
-    document.getElementById('footerName').textContent = s.footerName || 'BLACK NIGHT';
-    document.getElementById('contactPhone1').textContent = s.phone1 || '+7 999 442 8731';
-    document.getElementById('contactPhone1').href = 'tel:' + (s.phone1 || '+79994428731').replace(/\s/g, '');
-    document.getElementById('contactPhone2').textContent = s.phone2 || '+7 967 618 5582';
-    document.getElementById('contactPhone2').href = 'tel:' + (s.phone2 || '+79676185582').replace(/\s/g, '');
-    document.getElementById('workTimeText').textContent = s.workTime || 'Ежедневно · 08:00 – 23:00';
-  }
-
-  function applyDefaultSettings() {
-    const def = {
-      logo: 'BLACK NIGHT',
-      sub: 'Premium Detailing &amp; Service',
-      phone1: '+7 999 442 8731',
-      phone2: '+7 967 618 5582',
-      workTime: 'Ежедневно · 08:00 – 23:00',
-      heroTitle: 'ИДЕАЛЬНЫЙ БЛЕСК',
-      heroDesc: 'Профессиональный детейлинг для вашего автомобиля',
-      heroTags: 'ТОНИРОВКА, БРОНИРОВАНИЕ ФАР, ПОЛИРОВКА, ХИМЧИСТКА',
-      services: 'Тонировка;Защита от солнца, ультрафиолета и посторонних взглядов. Качественная плёнка.;от 3 000 ₽|Бронирование фар;Прозрачная защита от сколов, песка и выцветания. Сохраняет светопропускание.;от 3 500 ₽|Полировка кузова;Восстановление блеска, удаление царапин и голограмм. Возвращаем заводской вид.;от 2 000 ₽|Химчистка салона;Глубокая очистка, удаление пятен и запахов. Бережный уход за любыми материалами.;от 2 000 ₽',
-      adv: 'Только премиум-материалы;Плёнки и составы от мировых брендов. Никаких ноунеймов и подделок.|Чёткие сроки;Согласовываем дату и сдаём авто точно в срок. Уважаем ваше время.|Мастера с опытом 8+ лет;Работаем с премиум-сегментом: BMW, Mercedes, Porsche, Lexus и другие.',
-      address: 'Красноярск, ул. Содружества, 3А',
-      footerName: 'BLACK NIGHT'
-    };
-    applySettings(def);
-    localStorage.setItem('bn_settings', JSON.stringify(def));
-  }
-
-  function saveSettings() {
-    const s = {
-      logo: document.getElementById('setLogo').value,
-      sub: document.getElementById('setSub').value,
-      phone1: document.getElementById('setPhone1').value,
-      phone2: document.getElementById('setPhone2').value,
-      workTime: document.getElementById('setWorkTime').value,
-      heroTitle: document.getElementById('setHeroTitle').value,
-      heroDesc: document.getElementById('setHeroDesc').value,
-      heroTags: document.getElementById('setHeroTags').value,
-      services: document.getElementById('setServices').value,
-      adv: document.getElementById('setAdv').value,
-      address: document.getElementById('setAddress').value,
-      footerName: document.getElementById('setFooterName').value
-    };
-    localStorage.setItem('bn_settings', JSON.stringify(s));
-    applySettings(s);
-    alert('Настройки сохранены и применены!');
-  }
-
-  function toggleSettings() {
-    document.getElementById('settingsPanel').classList.toggle('active');
-  }
-
-  function addImages() {
-    const files = document.getElementById('imageUpload').files;
-    if (!files.length) return;
-    const grid = document.getElementById('galleryGrid');
-    for (let f of files) {
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        const img = document.createElement('img');
-        img.src = e.target.result;
-        img.alt = 'работа';
-        grid.appendChild(img);
-      };
-      reader.readAsDataURL(f);
-    }
-  }
-
+  // ===== ОТЗЫВЫ (localStorage) =====
   function loadReviews() {
     const data = localStorage.getItem('bn_reviews');
     if (data) document.getElementById('reviewsGrid').innerHTML = data;
@@ -1007,17 +767,14 @@
     document.getElementById('reviewText').value = '';
   }
 
-  window.onload = function() {
-    loadSettings();
-    loadReviews();
-  };
+  window.onload = loadReviews;
 
+  // ===== ФОРМА (можно настроить Formspree) =====
   document.getElementById('orderForm').addEventListener('submit', function(e) {
-    // Для отправки на почту — добавьте action в тег form
-    // e.preventDefault();
-    // this.action = 'https://formspree.io/f/YOUR_ID';
-    // this.submit();
+    // Добавьте action="https://formspree.io/f/ВАШ_ID" в тег form для отправки на почту
+    // e.preventDefault(); // раскомментируйте, если используете AJAX
   });
 </script>
+
 </body>
 </html>
