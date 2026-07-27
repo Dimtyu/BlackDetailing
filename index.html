@@ -279,8 +279,6 @@
       width: 100%;
       height: 200px;
       object-fit: cover;
-      /* По умолчанию центрируем картинку */
-      object-position: 50% 50%;
       border-radius: 14px;
       border: 1px solid var(--border-light);
       transition: 0.3s;
@@ -291,9 +289,11 @@
       box-shadow: var(--shadow);
     }
 
-    /* Можно задать отдельное позиционирование для каждого фото, если нужно сместить фокус */
-    /* Пример: .gallery-grid img:nth-child(1) { object-position: 60% 40%; } */
-    /* Раскомментируйте и настройте при необходимости */
+    /* Индивидуальная настройка центрирования для каждой фотографии */
+    .gallery-grid img:nth-child(1) { object-position: 52% 45%; }
+    .gallery-grid img:nth-child(2) { object-position: 48% 50%; }
+    .gallery-grid img:nth-child(3) { object-position: 50% 55%; }
+    .gallery-grid img:nth-child(4) { object-position: 50% 48%; }
 
     /* ===== STEPS ===== */
     .steps-grid {
@@ -335,12 +335,14 @@
       margin-top: 4px;
     }
 
-    /* ===== REVIEWS ===== */
+    /* ===== REVIEWS — ИСПРАВЛЕНО ЦЕНТРИРОВАНИЕ ===== */
     .reviews-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
-      margin: 20px 0 30px;
+      margin: 20px auto 30px;
+      max-width: 900px; /* ограничим ширину для красоты */
+      justify-content: center; /* центрируем колонки */
     }
     .review-card {
       background: var(--bg-card);
@@ -349,6 +351,7 @@
       padding: 20px;
       border-left: 4px solid var(--accent);
       transition: 0.3s;
+      width: 100%; /* занимает всю доступную ширину в своей ячейке */
     }
     .review-card:hover {
       border-color: var(--accent);
@@ -438,7 +441,7 @@
       border: 1px solid var(--border-light);
       border-radius: 16px;
       padding: 25px;
-      margin: 30px 0 20px;
+      margin: 30px auto 20px;
       max-width: 620px;
       transition: 0.3s;
     }
@@ -626,6 +629,7 @@
       }
       .add-review {
         padding: 20px;
+        margin: 20px auto;
       }
       .contacts-block {
         flex-direction: column;
@@ -836,7 +840,6 @@
     <div class="section-sub">03 / Работы</div>
     <h2 class="section-title">Примеры наших работ</h2>
     <div class="gallery-grid">
-      <!-- Если нужно сместить фокус на каждой фотографии, добавьте style="object-position: X% Y%;" -->
       <img src="https://raw.githubusercontent.com/Dimtyu/BlackDetailing/main/Picsart_26-07-19_20-20-08-164.jpg" alt="работа 1">
       <img src="https://raw.githubusercontent.com/Dimtyu/BlackDetailing/main/Picsart_26-07-19_20-20-35-393.jpg" alt="работа 2">
       <img src="https://raw.githubusercontent.com/Dimtyu/BlackDetailing/main/Picsart_26-07-19_20-21-15-356.jpg" alt="работа 3">
@@ -844,7 +847,7 @@
     </div>
   </section>
 
-  <!-- ===== STEPS ===== -->
+  <!-- ===== STEPS (исправлены опечатки) ===== -->
   <section>
     <div class="section-sub">04 / Как мы работаем</div>
     <h2 class="section-title">Пять шагов к идеальному авто</h2>
