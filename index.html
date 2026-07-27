@@ -635,7 +635,7 @@
     </div>
   </section>
 
-  <!-- ===== ADVANTAGES (исправлено) ===== -->
+  <!-- ===== ADVANTAGES ===== -->
   <section>
     <div class="section-sub">02 / Почему BLACK NIGHT</div>
     <h2 class="section-title">Три причины отдать авто нам</h2>
@@ -658,7 +658,7 @@
     </div>
   </section>
 
-  <!-- ===== GALLERY (фотографии обновлены) ===== -->
+  <!-- ===== GALLERY ===== -->
   <section>
     <div class="section-sub">03 / Работы</div>
     <h2 class="section-title">Примеры наших работ</h2>
@@ -701,7 +701,8 @@
     <div class="section-sub">06 / Запись</div>
     <h2 class="section-title">Записаться на услугу</h2>
     <div class="form-wrap">
-      <form id="orderForm">
+      <!-- ОБНОВЛЕНО: добавлен action с вашим Formspree ID -->
+      <form id="orderForm" action="https://formspree.io/f/xbdnqwpv" method="POST">
         <input type="text" name="name" placeholder="Ваше имя" required>
         <input type="tel" name="phone" placeholder="Телефон" required>
         <input type="text" name="car" placeholder="Марка и модель авто">
@@ -767,11 +768,8 @@
 
   window.onload = loadReviews;
 
-  // ===== ФОРМА (можно настроить Formspree) =====
-  document.getElementById('orderForm').addEventListener('submit', function(e) {
-    // Добавьте action="https://formspree.io/f/ВАШ_ID" в тег form для отправки на почту
-    // e.preventDefault(); // раскомментируйте, если используете AJAX
-  });
+  // ===== ФОРМА =====
+  // Теперь форма отправляется через Formspree. Убедитесь, что вы подтвердили email в письме от Formspree.
 </script>
 
 </body>
